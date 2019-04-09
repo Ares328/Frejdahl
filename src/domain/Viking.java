@@ -51,4 +51,14 @@ public class Viking {
     public void setDateOfOrigin(LocalDateTime dateOfOrigin) {
         this.dateOfOrigin = dateOfOrigin;
     }
+
+    @Override
+    public String toString() {
+        return "Viking{" +
+                "name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", origin='" + origin + '\'' +
+                ", dateOfOrigin=" + dateOfOrigin +
+                '}';
+    }
 }
