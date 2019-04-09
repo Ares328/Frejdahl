@@ -7,17 +7,19 @@ public class Viking {
     private String description;
     private String origin;
     private LocalDateTime dateOfOrigin;
-    //private Beer beer; TODO: Each Beer has a Viking or each Viking has a beer, not both
+
+    private Beer beer; // TODO: Each Beer has a Viking or each Viking has a beer, not both
 
     public Viking() {
 
     }
 
-    public Viking(String name, String description, String origin, LocalDateTime dateOfOrigin) {
+    public Viking(String name, String description, String origin, LocalDateTime dateOfOrigin, Beer matchingBeer) {
         setName(name);
         setDescription(description);
         setOrigin(origin);
         setDateOfOrigin(dateOfOrigin);
+        setBeer(matchingBeer);
     }
 
     public String getName() {
@@ -52,6 +54,14 @@ public class Viking {
         this.dateOfOrigin = dateOfOrigin;
     }
 
+    public Beer getBeer() {
+        return beer;
+    }
+
+    public void setBeer(Beer beer) {
+        this.beer = beer;
+    }
+
     @Override
     public String toString() {
         return "Viking{" +
@@ -59,6 +69,7 @@ public class Viking {
                 ", description='" + description + '\'' +
                 ", origin='" + origin + '\'' +
                 ", dateOfOrigin=" + dateOfOrigin +
+                ", beer=" + beer +
                 '}';
     }
 }

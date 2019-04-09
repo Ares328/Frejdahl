@@ -5,14 +5,12 @@ import java.util.List;
 
 public class Beer {
 
-    private Viking viking;
     private double alcoholPercentage;
     private double price;
     private List<Flavor> flavors;
     private int tag;
 
     public Beer(Viking viking, double alcoholPercentage, double price, int tag) {
-        setViking(viking);
         setAlcoholPercentage(alcoholPercentage);
         setPrice(price);
         setTag(tag);
@@ -26,15 +24,6 @@ public class Beer {
     public void addflavorsList(Flavor flavor){
         this.flavors.add(flavor);
     }
-
-    public Viking getViking() {
-        return viking;
-    }
-
-    public void setViking(Viking viking) {
-        this.viking = viking;
-    }
-
     public double getAlcoholPercentage() {
         return alcoholPercentage;
     }
@@ -62,7 +51,6 @@ public class Beer {
     @Override
     public String toString() {
         return "Beer{" +
-                "viking=" + viking +
                 ", alcoholPercentage=" + alcoholPercentage +
                 ", price=" + price +
                 ", flavors=" + flavors +
