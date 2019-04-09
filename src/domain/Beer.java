@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Beer {
+
     private Viking viking;
     private double alcoholPercentage;
     private double price;
