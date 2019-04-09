@@ -1,5 +1,5 @@
 package domain;
 
 public enum Flavor {
-    SWEET,BITTER,
+    SWEET,BITTER //TODO: find all beer flavors
 }
