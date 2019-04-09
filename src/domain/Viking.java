@@ -8,7 +8,7 @@ public class Viking {
     private String origin;
     private LocalDateTime dateOfOrigin;
 
-    private Beer beer; // TODO: Each Beer has a Viking or each Viking has a beer, not both
+    private Beer beer;
 
     public Viking() {
 
