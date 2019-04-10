@@ -11,7 +11,7 @@ public class Beer {
     private int tag;
     private int value;
 
-    public Beer(Viking viking, double alcoholPercentage, double price, int tag) {
+    public Beer(double alcoholPercentage, double price, int tag) {
         setAlcoholPercentage(alcoholPercentage);
         setPrice(price);
         setTag(tag);
