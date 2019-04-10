@@ -9,6 +9,7 @@ public class Beer {
     private double price;
     private List<Flavor> flavors;
     private int tag;
+    private int value;
 
     public Beer(Viking viking, double alcoholPercentage, double price, int tag) {
         setAlcoholPercentage(alcoholPercentage);
@@ -19,6 +20,14 @@ public class Beer {
 
     public Beer(){
 
+    }
+
+    public int getValue() {
+        return value;
+    }
+
+    public void setValue(int value) {
+        this.value = value;
     }
 
     public void addflavorsList(Flavor flavor){
