@@ -22,7 +22,7 @@ public class Beer {
         setName(name);
         setValue(value);
         setViking(viking);
-        flavors = new ArrayList<>();
+        //flavors = new ArrayList<>();
     }
 
     public Viking getViking() {
