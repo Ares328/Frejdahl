@@ -10,16 +10,27 @@ public class Beer {
     private double price;
     private List<Flavor> flavors;
     private int value;
+    private Viking viking;
 
     public Beer(){
 
     }
 
-    public Beer(String name, double alcoholPercentage, double price) {
+    public Beer(String name, double alcoholPercentage, double price, int value,Viking viking) {
         setAlcoholPercentage(alcoholPercentage);
         setPrice(price);
         setName(name);
+        setValue(value);
+        setViking(viking);
         flavors = new ArrayList<>();
+    }
+
+    public Viking getViking() {
+        return viking;
+    }
+
+    public void setViking(Viking viking) {
+        this.viking = viking;
     }
 
     public String getName() {
