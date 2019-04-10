@@ -5,18 +5,16 @@ import java.time.LocalDateTime;
 public class Viking {
     private String name;
     private String description;
-    private String origin;
+    private Origin origin;
     private LocalDateTime dateOfOrigin;
 
     public Viking() {
 
     }
 
-    public Viking(String name, String description, String origin, LocalDateTime dateOfOrigin) {
-        setName(name);
+    public Viking(String description, Origin origin) {
         setDescription(description);
         setOrigin(origin);
-        setDateOfOrigin(dateOfOrigin);
     }
 
     public String getName() {
@@ -35,11 +33,11 @@ public class Viking {
         this.description = description;
     }
 
-    public String getOrigin() {
+    public Origin getOrigin() {
         return origin;
     }
 
-    public void setOrigin(String origin) {
+    public void setOrigin(Origin origin) {
         this.origin = origin;
     }
 
