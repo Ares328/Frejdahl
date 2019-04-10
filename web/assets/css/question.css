@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Rakkas');
+
+::selection {
+  background: #ff7b00; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #ff7b00; /* Gecko Browsers */
+}
+
 main{
-    margin-top: 10%;
+    margin-top: 8%;
 }
 
 body{
@@ -10,6 +18,10 @@ body{
   background-size: cover;
   overflow:hidden;
   font-family:'Rakkas';
+}
+
+nav>span{
+  font-size: 1.8rem !important;
 }
 
 h2{
@@ -50,7 +62,7 @@ input[type="radio"].radio-custom:checked + label span {
 
 input[type="radio"]:checked + label span {
   opacity: 1;
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg) center center no-repeat;
+  /* background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg) center center no-repeat; */
   width: 22px;
   height: 22px;
   display: inline-block;
