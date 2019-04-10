@@ -5,21 +5,29 @@ import java.util.List;
 
 public class Beer {
 
+    private String name;
     private double alcoholPercentage;
     private double price;
     private List<Flavor> flavors;
-    private int tag;
     private int value;
-
-    public Beer(double alcoholPercentage, double price, int tag) {
-        setAlcoholPercentage(alcoholPercentage);
-        setPrice(price);
-        setTag(tag);
-        flavors = new ArrayList<>();
-    }
 
     public Beer(){
 
+    }
+
+    public Beer(String name, double alcoholPercentage, double price) {
+        setAlcoholPercentage(alcoholPercentage);
+        setPrice(price);
+        setName(name);
+        flavors = new ArrayList<>();
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getValue() {
@@ -30,9 +38,10 @@ public class Beer {
         this.value = value;
     }
 
-    public void addflavorsList(Flavor flavor){
+    public void addToFlavorsList(Flavor flavor){
         this.flavors.add(flavor);
     }
+
     public double getAlcoholPercentage() {
         return alcoholPercentage;
     }
@@ -49,21 +58,14 @@ public class Beer {
         this.price = price;
     }
 
-    public int getTag() {
-        return tag;
-    }
-
-    public void setTag(int tag) {
-        this.tag = tag;
-    }
-
     @Override
     public String toString() {
         return "Beer{" +
+                "name='" + name + '\'' +
                 ", alcoholPercentage=" + alcoholPercentage +
                 ", price=" + price +
                 ", flavors=" + flavors +
-                ", tag=" + tag +
+                ", value=" + value +
                 '}';
     }
 }
