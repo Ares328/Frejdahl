@@ -12,7 +12,8 @@ public class Viking {
 
     }
 
-    public Viking(String description, Origin origin) {
+    public Viking(String name, String description, Origin origin) {
+        setName(name);
         setDescription(description);
         setOrigin(origin);
     }
@@ -54,7 +55,7 @@ public class Viking {
         return "Viking{" +
                 "name='" + name + '\'' +
                 ", description='" + description + '\'' +
-                ", origin='" + origin + '\'' +
+                ", origin=" + origin +
                 ", dateOfOrigin=" + dateOfOrigin +
                 '}';
     }
