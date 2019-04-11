@@ -2,14 +2,23 @@ package domain;
 
 public class Answer {
     private Flavor flavor;
+    private String text;
     private int value;
 
     public Answer() {
     }
 
-    public Answer(Flavor flavor, int value) {
-        this.flavor = flavor;
-        this.value = value;
+    public Answer(String text, int value) {
+        setValue(value);
+        setText(text);
+    }
+
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
     }
 
     public Flavor getFlavor() {
