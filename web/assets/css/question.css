@@ -1,0 +1,78 @@
+@font-face{
+  font-family: 'vikings';
+  src: url('../fonts/PR\ Viking.ttf');
+}
+
+::selection {
+  background: #ff7b00; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #ff7b00; /* Gecko Browsers */
+}
+
+main{
+    margin-top: 8%;
+}
+
+body{
+  background-color:#232728;
+  background-image: url("../../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow:hidden;
+  font-family:'vikings';
+}
+
+nav>span{
+  font-size: 1.8rem !important;
+}
+
+h2{
+  font-size: 3rem;
+}
+
+div {
+  display: inline-block;
+}
+input[type="radio"] {
+  display: none;
+}
+input[type="radio"] + label {
+  font-size:1.2rem;
+}
+
+input[type="radio"] + label:hover{
+  color: #f56f01;
+}
+
+input[type="radio"] + label span {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin: -2px 10px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid #FFFFFF;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  line-height: 44px;
+}
+input[type="radio"] + label span img {
+  opacity: 0;
+  transition: all .3s ease;
+}
+input[type="radio"].radio-custom:checked + label span {
+  background-color: #f56f01;
+}
+
+input[type="radio"]:checked + label span {
+  opacity: 1;
+  /* background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg) center center no-repeat; */
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+
+}

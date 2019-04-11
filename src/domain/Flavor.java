@@ -29,7 +29,7 @@ public enum Flavor {
         this.keywords = keywords;
     }
 
-    public void addKeyword(String keyword){
+    public void addKeyword(String keyword) {
         this.keywords.add(keyword);
     }
 
