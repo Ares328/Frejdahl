@@ -34,7 +34,13 @@
                     <input type="radio" class="form-check-input radio-custom" name="Value" id="answer4" value="4"/>
                     <label for="answer4"><span></span>Answer 4</label>
                 </div>
-                <div><input type="submit" value="Submit"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <button type="submit" class="btn btn-block">
+                            Submit
+                    </button>            
+                </div>
             </div>
         </form>
     </main>

@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="Frejdahl:Web">
-    <output-path>$PROJECT_DIR$/out/artifacts/Frejdahl_Web</output-path>
-    <root id="archive" name="Frejdahl_Web.war">
-      <element id="artifact" artifact-name="Frejdahl:Web exploded" />
-    </root>
-  </artifact>
-</component>
