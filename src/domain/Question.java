@@ -7,6 +7,7 @@ public class Question {
     private List<Answer> answers;
 
     public Question() {
+
     }
 
     public Question(String text, List<Answer> answers) {
