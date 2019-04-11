@@ -44,14 +44,26 @@ public class BeerService {
                         Origin.UNKNOWN)));
 
         // OKOLOGISKE OL
-        allBeers.add(new Beer("FULLA",5.7,0,40, new Viking()));
-        allBeers.add(new Beer("GULDTOP",4.8,0,20, new Viking()));
-        allBeers.add(new Beer("NIDHUG",5.2,0,30, new Viking()));
-        allBeers.add(new Beer("VALRAVN",6.0,0,80, new Viking()));
+        allBeers.add(new Beer("FULLA",5.7,0,40,
+                new Viking("Fulla is described as wearing a golden band and as tending to the ashen box and the footwear owned by the goddess Frigg, and, in addition, Frigg confides in Fulla her secrets",
+                        Origin.NORSE)));
+        allBeers.add(new Beer("GULDTOP",4.8,0,20,
+                new Viking("In Norse mythology, Gulltoppr (Old Norse \"golden mane\") is one of the horses of the gods. Gulltoppr is mentioned in ",
+                        Origin.NORSE)));
+        allBeers.add(new Beer("NIDHUG",5.2,0,30,
+                new Viking("Níðhöggr (Malice Striker, traditionally also spelled Níðhǫggr, often anglicized Nidhogg) is a dragon/serpent who gnaws at a root of the world tree, Yggdrasil.",
+                        Origin.NORSE)));
+        allBeers.add(new Beer("VALRAVN",6.0,0,80,
+                new Viking("",
+                        Origin.UNKNOWN)));
 
         // MJOD
-        allBeers.add(new Beer("GUDRUN",19.0,0,140, new Viking()));
-        allBeers.add(new Beer("GUNLØD",19.0,0,150, new Viking()));
+        allBeers.add(new Beer("GUDRUN",19.0,0,140,
+                new Viking("Gudrun, which, according to Nordic literature, means \"the secret tradition of the gods\"",
+                        Origin.NORSE)));
+        allBeers.add(new Beer("GUNLØD",19.0,0,150,
+                new Viking("Gunlød was the beautiful mother who guarded Suttung's Mountain and was seduced by Odin when he stole the \"Shield of the Shield\"",
+                        Origin.UNKNOWN)));
 
         return allBeers;
     }
