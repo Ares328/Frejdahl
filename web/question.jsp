@@ -15,25 +15,26 @@
     </nav>
     
     <main class="w-50 mx-auto text-light">
-        <form method="POST" action="#">
+        <form method="POST" action="/VikingBeer">
             <h2 class="" id="question">Whats the answer to this question?</h2>
             <div class="pl-5">
                 <div class="form-check mt-3">
-                    <input type="radio" class="form-check-input radio-custom" name="answers" id="answer1"/>
+                    <input type="radio" class="form-check-input radio-custom" name="Value" id="answer1" value="1"/>
                     <label for="answer1"><span></span>Answer 1</label>
                 </div>
                 <div class="form-check">
-                    <input type="radio" class="form-check-input radio-custom" name="answers" id="answer2"/>
+                    <input type="radio" class="form-check-input radio-custom" name="Value" id="answer2" value="2"/>
                     <label for="answer2"><span></span>Answer 2</label>
                 </div>
                 <div class="form-check">
-                    <input type="radio" class="form-check-input radio-custom" name="answers" id="answer3"/>
+                    <input type="radio" class="form-check-input radio-custom" name="Value" id="answer3" value="3"/>
                     <label for="answer3"><span></span>Answer 3</label>
                 </div>
                 <div class="form-check">
-                    <input type="radio" class="form-check-input radio-custom" name="answers" id="answer4"/>
+                    <input type="radio" class="form-check-input radio-custom" name="Value" id="answer4" value="4"/>
                     <label for="answer4"><span></span>Answer 4</label>
                 </div>
+                <div><input type="submit" value="Submit"></div>
             </div>
         </form>
     </main>

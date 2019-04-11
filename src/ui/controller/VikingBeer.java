@@ -51,14 +51,14 @@ public class VikingBeer extends HttpServlet {
         }
         amount--;
         if (guess == 1){
-            return "first.jsp";
+            return "question.jsp";
         }else if(guess == 2){
-            return "second.jsp";
+            return "question.jsp";
         }else if(guess == 3){
-            return "index.jsp";
+            return "question.jsp";
         }else {
             amount = 3;
-            return "result.jsp";
+            return "question.jsp";
         }
     }
 }
