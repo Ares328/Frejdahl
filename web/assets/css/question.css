@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Rakkas');
+@font-face{
+  font-family: 'vikings';
+  src: url('../fonts/PR\ Viking.ttf');
+}
 
 ::selection {
   background: #ff7b00; /* WebKit/Blink Browsers */
@@ -17,7 +20,7 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   overflow:hidden;
-  font-family:'Rakkas';
+  font-family:'vikings';
 }
 
 nav>span{
@@ -37,6 +40,11 @@ input[type="radio"] {
 input[type="radio"] + label {
   font-size:1.2rem;
 }
+
+input[type="radio"] + label:hover{
+  color: #f56f01;
+}
+
 input[type="radio"] + label span {
   display: inline-block;
   width: 22px;
