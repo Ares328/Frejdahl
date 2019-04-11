@@ -1,4 +1,4 @@
-package services;
+package services.repositories;
 
 public class Repositories {
     private static Repositories ourInstance = new Repositories();

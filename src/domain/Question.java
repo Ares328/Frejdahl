@@ -1,5 +1,6 @@
 package domain;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Question {
@@ -7,6 +8,7 @@ public class Question {
     private List<Answer> answers;
 
     public Question() {
+        answers = new ArrayList<>();
     }
 
     public Question(String text, List<Answer> answers) {
