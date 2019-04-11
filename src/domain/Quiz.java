@@ -1,5 +1,7 @@
 package domain;
 
+import services.BeerService;
+
 import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.Scanner;
@@ -57,7 +59,9 @@ public class Quiz {
             int answer = scanner.nextInt();
             addToScore(question.getAnswers().get(answer-1).getValue());
         }
+    }
 
-        System.out.println("***Total score: " + getScore());
+    public Viking getViking() {
+        return BeerService.getVikingByScore(getScore());
     }
 }
