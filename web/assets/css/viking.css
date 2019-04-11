@@ -1,0 +1,48 @@
+@font-face{
+    font-family: 'vikings';
+    src: url('../fonts/PR\ Viking.ttf');
+}
+
+::selection {
+    background: #ff7b00; /* WebKit/Blink Browsers */
+  }
+  ::-moz-selection {
+    background: #ff7b00; /* Gecko Browsers */
+  }
+
+body{
+    background-color:#232728;
+    background-image: url("../../img/viking.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'vikings';
+}
+
+nav>span{
+    font-size: 1.8rem !important;
+}
+
+main{
+    margin-top: 5%;
+}
+
+main h2{
+
+}
+
+main p{
+    line-height: 150%;
+}
+
+#top3{
+    display: flex !important;
+    flex-direction: row !important;
+}
+
+.recommendation{
+    width: 12vw;
+}
+a, a:hover, a:active, a:visited{
+    color: unset;
+    text-decoration: none; /* no underline */
+}

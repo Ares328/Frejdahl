@@ -1,6 +1,7 @@
 package services.questions;
 
 import domain.Answer;
+import domain.Question;
 import services.builders.QuestionBuilder;
 
 import java.util.ArrayList;

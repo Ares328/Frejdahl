@@ -9,5 +9,4 @@ public interface QuestionRepo {
     List<Question> getQuestions();
     Question getQuestion(int index);
     Question getNext();
-
 }
