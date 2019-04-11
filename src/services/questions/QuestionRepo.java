@@ -1,4 +1,4 @@
-package services.repositories.questions;
+package services.questions;
 
 import domain.Question;
 

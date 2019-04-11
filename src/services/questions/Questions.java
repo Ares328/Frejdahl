@@ -1,7 +1,6 @@
-package services.repositories.questions;
+package services.questions;
 
 import domain.Answer;
-import domain.Question;
 import services.builders.QuestionBuilder;
 
 import java.util.ArrayList;
@@ -9,7 +8,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class LocalQuestionRepo implements QuestionRepo {
+public class Questions implements QuestionRepo {
 
     public static List<Question> questions = new ArrayList<>(Arrays.asList(
             new QuestionBuilder()
@@ -53,7 +52,7 @@ public class LocalQuestionRepo implements QuestionRepo {
 
     private int current;
 
-    public LocalQuestionRepo(){
+    public Questions(){
         current = 0;
     }
 
