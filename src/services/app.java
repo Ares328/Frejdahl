@@ -23,30 +23,34 @@ public class app {
             }
         }).forEach(b -> System.out.println(b));
         */
+        for (int i=0;i<5;i++) {
+            Question firstQuestion =
+                    new Question("How do you like your meat?",
+                            Arrays.asList(
+                                    new Answer("Well done", 20),
+                                    new Answer("Rare", 5),
+                                    new Answer("Medium", 10)
+                            ));
 
-        Question firstQuestion =
-                new Question("How do you like your meat?",
-                        Arrays.asList(
-                                new Answer("Well done",20),
-                                new Answer("Rare",5),
-                                new Answer("Medium",10)
-                        ));
+            Question secondQuestion =
+                    new Question("What kind of drink do you prefer?",
+                            Arrays.asList(
+                                    new Answer("Wine", 10),
+                                    new Answer("Water", 5),
+                                    new Answer("Beer", 20)
+                            ));
 
-        Question secondQuestion =
-                new Question("What kind of drink do you prefer?",
-                        Arrays.asList(
-                                new Answer("Wine",10),
-                                new Answer("Water",5),
-                                new Answer("Beer",20)
-                        ));
+            Deque<Question> allQuestions = new ArrayDeque<>();
 
-        Deque<Question>allQuestions = new ArrayDeque<>();
+            allQuestions.add(firstQuestion);
+            allQuestions.add(secondQuestion);
 
-        allQuestions.add(firstQuestion);
-        allQuestions.add(secondQuestion);
+            Quiz quiz = new Quiz(allQuestions);
+            quiz.start();
 
-        Quiz quiz = new Quiz(allQuestions);
-        quiz.start();
-
+            System.out.println("TOTAL SCORE: " + quiz.getScore());
+            System.out.println("Your viking is... " + quiz.getViking().getName());
+            System.out.println(quiz.getViking().getDescription());
+        }
     }
 }
